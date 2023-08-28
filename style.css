@@ -10,6 +10,10 @@ body{
    justify-content: center;
     height: 100vh;
 }
+#btnSearch{
+    background-color: #16c2a0;
+    color: aliceblue;
+}
 .hero{
     display: flex;
     flex-direction: column;
@@ -143,6 +147,11 @@ width: 100%;
 display: flex;
 justify-content: center;
 padding: 1em;
+}
+
+#logo::first-letter{
+    color: #16c2a0;
+    font-size: 2rem;
 }
 picture img{
     animation-name: animated;
