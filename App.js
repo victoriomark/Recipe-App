@@ -1,5 +1,7 @@
 
 const body = document.querySelector('body');
+const navlink = document.querySelector("#navlink");
+const animated = document.querySelector('picture');
 
 
 const Recipe = async () => {
@@ -33,21 +35,21 @@ result.forEach(e =>{
     `;
     body.appendChild(content)
     content.classList.add("content")
+    
 })
-
-
 
  Search.value = "";
 }
 
-
-
 document.querySelector('form').addEventListener('submit',(e)=>{
    e.preventDefault()
-  
-   
 })
 
 const btnSearch = document.getElementById('btnSearch').addEventListener('click',()=>{
     Recipe()
+    animated.classList.add("deactivated")
+})
+
+const burger = document.querySelector("#burger").addEventListener('click',()=>{
+navlink.classList.toggle("activeNav");
 })
