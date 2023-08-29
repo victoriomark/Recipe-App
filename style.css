@@ -223,7 +223,7 @@ picture img{
 50%{
     transform: translateY(10px);
 }
-100%{
+50%{
     transform: translateY(-10px);
 }
 
