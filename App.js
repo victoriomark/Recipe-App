@@ -2,6 +2,7 @@
 const body = document.querySelector('body');
 const navlink = document.querySelector("#navlink");
 const animated = document.querySelector('picture');
+const loader = document.querySelector('.loader')
 
 
 const Recipe = async () => {
@@ -43,12 +44,17 @@ result.forEach(e =>{
 
 document.querySelector('form').addEventListener('submit',(e)=>{
    e.preventDefault()
+   loader.classList.add("active_LOADER")
+   setTimeout(()=>{
+       loader.classList.remove("active_LOADER")
+       Recipe()
+       animated.classList.add("deactivated")
+   },4000)
 })
 
-const btnSearch = document.getElementById('btnSearch').addEventListener('click',()=>{
-    Recipe()
-    animated.classList.add("deactivated")
-})
+// const btnSearch = document.getElementById('btnSearch').addEventListener('click',()=>{
+
+// })
 
 const burger = document.querySelector("#burger").addEventListener('click',()=>{
 navlink.classList.toggle("activeNav");
