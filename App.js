@@ -44,17 +44,17 @@ result.forEach(e =>{
 
 document.querySelector('form').addEventListener('submit',(e)=>{
    e.preventDefault()
-   loader.classList.add("active_LOADER")
-   setTimeout(()=>{
-       loader.classList.remove("active_LOADER")
-       Recipe()
-       animated.classList.add("deactivated")
-   },4000)
+
 })
 
-// const btnSearch = document.getElementById('btnSearch').addEventListener('click',()=>{
-
-// })
+const btnSearch = document.getElementById('btnSearch').addEventListener('click',()=>{
+    loader.classList.add("active_LOADER")
+    setTimeout(()=>{
+        loader.classList.remove("active_LOADER")
+        Recipe()
+        animated.classList.add("deactivated")
+    },4000)
+})
 
 const burger = document.querySelector("#burger").addEventListener('click',()=>{
 navlink.classList.toggle("activeNav");
