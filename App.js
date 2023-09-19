@@ -1,10 +1,10 @@
 
-const body = document.querySelector('body');
+const Item_Container = document.querySelector('.Item_Container');
 const navlink = document.querySelector("#navlink");
 const animated = document.querySelector('picture');
 const loader = document.querySelector('.loader')
 
-
+// my Api
 const Recipe = async () => {
 const Search =  document.querySelector('input');
 const apiKey = '0+MqXToHwjmS0i7+RVhE1Q==BhuNr2wmhrzkujvH';
@@ -34,7 +34,7 @@ result.forEach(e =>{
         </details>
     
     `;
-    body.appendChild(content)
+    Item_Container.appendChild(content)
     content.classList.add("content")
     
 })

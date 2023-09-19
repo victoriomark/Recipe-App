@@ -1,47 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d4532539ca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/d4532539ca.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    
     <a href="https://storyset.com/information"></a>
     <title>Recipe App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav id="burger">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-        </nav>
-        <h2 id="logo">Recipes</h2>
-        <ul id="navlink">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="btns">
-            <button>Register</button>
-            <button>Log in</button>
-        </div>
+      <nav id="burger">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </nav>
+      <h2 id="logo">Recipes</h2>
+      <ul id="navlink">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="btns">
+        <button>Register</button>
+        <button>Log in</button>
+      </div>
     </header>
     <section class="hero">
-        <form action="#">
-            <input type="text" placeholder="Search your Recipe">
-            <button id="btnSearch"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+      <form action="#">
+        <input type="text" placeholder="Search your Recipe" />
+        <button id="btnSearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </form>
     </section>
-   <picture>
-    <img src="./assets/img/Recipe book-amico.png" width="300" alt="">
-   </picture>
-  <div class="loader">
+    <div class="Item_Container"></div>
 
-  </div>
+    <div class="aboutLabel">
+      <h1>About Us</h1>
+    </div>
+    <div class="about_us">
+      <picture>
+        <img src="./assets/img/aboutpic.avif" width="400" alt="" />
+      </picture>
+      <div class="contents">
+        <h3>Welcome to <span>Flavor Hub!</span></h3>
+        <p>
+          At <span>Flavor Hub</span>, where you may also find delectable recipes to savor, we
+          share and give you the recipes you need. Whether you are a beginner or
+          an expert, you are welcome at Flavor Hub! At Flavor Hub, we think that
+          everyone should enjoy the process of cooking. We have a wide variety
+          of recipes in our collection that are suitable for cooks of every
+          level, so there is something for everyone to enjoy. Flavor Hub is
+          intended to inspire and direct you on your culinary journey, whether
+          you're just getting started or hoping to broaden your range. With our
+          easy-to-follow instructions and helpful tips, you can confidently
+          experiment with new flavors and techniques. We believe that cooking
+          should be a fun and creative experience, and our diverse range of
+          recipes reflects that philosophy. So come join us at Flavor Hub and
+          let's embark on a delicious adventure together!
+        </p>
+      </div>
+    </div>
+    <footer>
+      <ul id="info">
+        <h2 id="logo">Recipes</h2>
+        <li>SERVICE</li>
+        <li>PRE-SALE FAOS</li>
+        <li>SUBMIT A TICKET</li>
+        <li>CONTACT US</li>
+        <li>SUPPORT</li>
+      </ul>
+      <div class="links">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-github"></i>
+      </div>
+    </footer>
 
+    <div class="loader"></div>
     <script src="App.js"></script>
-</body>
+  </body>
 </html>

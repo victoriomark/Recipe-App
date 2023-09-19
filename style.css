@@ -7,7 +7,7 @@ body{
     align-items: center;
     font-family: 'Poppins',sans-serif;
     background-color: #252B48;
-   justify-content: center;
+    justify-content: center;
     height: 100vh;
 }
 #btnSearch{
@@ -181,6 +181,88 @@ nav{
 }
 }
 
+.about_us{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+.about_us .contents{
+    color: aliceblue;
+    display: grid;
+    gap: 10px;
+    width: 80%;
+}
+.aboutLabel{
+    text-align: center;
+    padding: 10px;
+    color: #16c2a0;
+    opacity: 0.4;
+    font-size: 1.rem;
+}
+picture img{
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.contents h3 span{
+    color: #16c2a0;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    gap: 1rem;
+    background-color: #001C30;
+    color: aliceblue;
+
+}
+footer ul{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    place-items: center;
+    padding: 10px;
+    border-bottom: solid 2px aliceblue;
+    width: 100%;
+}
+
+li{
+    cursor: pointer;
+    text-transform: lowercase;
+    color: #16c2a0;
+    margin: 10px;
+}
+.links{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px
+}
+.links i{
+    padding: 10px;
+    border: solid;
+    border-radius: 50%;
+    color: #16c2a0;
+}
+
+.contents p span{
+    color: #16c2a0;
+}
+
+
+
+
+
+
+
 @media (width <= 768px) {
    header ul{
      display: none;
@@ -196,6 +278,21 @@ nav{
     nav{
         display: flex;
     }
+    .about_us{
+        display: grid;
+        place-items: center;
+    }
+    .about_us .contents{
+        width: 100%;
+    }
+  picture img{
+    height: 350px;
+    width: 350px;
+    border: 5px;
+  }
+  footer ul{
+    grid-template-columns: repeat(2,200px);
+  }
 }
 .activeNav{
     position: absolute;
@@ -208,31 +305,8 @@ nav{
     justify-content: center;
     width: 100%;
 }
-picture {
-width: 100%;
-display: flex;
-justify-content: center;
-padding: 1em;
-}
-
 #logo::first-letter{
     color: #16c2a0;
     font-size: 2rem;
 }
-picture img{
-    animation-name: animated;
-    animation-iteration-count: infinite;
-    animation-duration: 2s;
-}
-@keyframes animated {
-50%{
-    transform: translateY(10px);
-}
-50%{
-    transform: translateY(-10px);
-}
 
-}
-.deactivated{
-  display: none;
-}
