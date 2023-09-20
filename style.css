@@ -251,7 +251,6 @@ footer{
     border: solid;
     border-radius: 50%;
     color: #16c2a0;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 }
 
 .contents p span{
