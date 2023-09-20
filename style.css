@@ -229,7 +229,6 @@ footer ul{
 
 li{
     cursor: pointer;
-    text-transform: lowercase;
     color: #16c2a0;
     margin: 10px;
 }
@@ -293,7 +292,7 @@ li{
     position: absolute;
     top: 4rem;
     left: 0;
-    background-color: #16c2a0;
+    background-color: #252B48;
     height: 15vh;
     display: flex;
     align-items: center;
