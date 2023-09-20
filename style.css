@@ -293,6 +293,9 @@ footer{
     align-items: center;
     color: #16c2a0;
 }
+.Item_Container{
+    color: #000000;
+}
 
 @media (width <= 768px) {
    header ul{
