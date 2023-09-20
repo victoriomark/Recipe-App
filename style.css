@@ -280,7 +280,6 @@ footer{
 }
 .card picture img{
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    border-top: solid 3px #16c2a0;
     object-fit: cover;
 }
 
@@ -321,6 +320,9 @@ footer{
   }
   .card picture img{
     width: 320px;
+  }
+  .MeatMyTeam.card{
+    border: none;
   }
   
 }
