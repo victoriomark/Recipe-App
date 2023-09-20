@@ -59,3 +59,19 @@ const btnSearch = document.getElementById('btnSearch').addEventListener('click',
 const burger = document.querySelector("#burger").addEventListener('click',()=>{
 navlink.classList.toggle("activeNav");
 })
+
+
+// FAQ JS
+
+let span = document.querySelectorAll(" h5 .span")
+let contents = document.querySelectorAll(".infos")
+
+span.forEach((e,index_span)=>{
+    e.addEventListener("click",()=>{
+      contents.forEach((e,index)=>{
+      if(index === index_span){
+      e.classList.toggle("active_Contents")
+      }
+      })
+    })
+})
