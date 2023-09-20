@@ -6,7 +6,7 @@
 body{
     align-items: center;
     font-family: 'Poppins',sans-serif;
-    background-color: #252B48;
+    background-color: #222;
     justify-content: center;
     height: 100vh;
 }
@@ -85,7 +85,7 @@ header ul,a{
     gap: 4rem;
     font-weight: 600;
     text-decoration: none;
-    color: aliceblue;
+    color: #16c2a0;
 }
 
 button:hover{
@@ -217,9 +217,8 @@ footer{
     place-items: center;
     width: 100%;
     gap: 1rem;
-    background-image: radial-gradient(#0c8545 2px, transparent 2px);
-    background-size: 10px 10px;
-    background-color: #2b2b65;
+    height: 20vh;
+    background-color: #4444;
     color: aliceblue;
 
 }
