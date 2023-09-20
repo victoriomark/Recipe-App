@@ -87,23 +87,12 @@ header ul,a{
     text-decoration: none;
     color: aliceblue;
 }
-.btns button{
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    background-color: #16c2a0;
-    color: aliceblue;
-    font-weight: 600;
 
-}
 button:hover{
     background-color: #1febc2;
     color: aliceblue;
 }
-.btns{
-    display: flex;
-    gap: 1rem;
-}
+
 
 a:hover{
     color: #16c2a0;
@@ -198,6 +187,14 @@ nav{
     gap: 10px;
     width: 80%;
 }
+
+.about_us .contents p{
+    word-spacing: 2px;
+    color: #a0a6c8;
+}
+
+
+
 .aboutLabel{
     text-align: center;
     padding: 10px;
@@ -225,12 +222,9 @@ footer{
 }
 footer ul{
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(3,400px);
     place-items: center;
     padding: 10px;
     border-bottom: solid 2px aliceblue;
-    width: 100%;
 }
 
 li{
@@ -240,11 +234,11 @@ li{
     margin: 10px;
 }
 .links{
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px
+    padding: 10px;
+    gap: 2rem;
 }
 .links i{
     padding: 10px;
@@ -270,13 +264,10 @@ li{
     header{
         justify-content: space-between;
     }
-    .btns button{
-    
-        background-color: #16c2a0;
-        color: aliceblue;
-    }
+
     nav{
         display: flex;
+        background-color: #252B48;
     }
     .about_us{
         display: grid;
@@ -294,6 +285,10 @@ li{
     grid-template-columns: repeat(2,200px);
   }
 }
+
+
+
+
 .activeNav{
     position: absolute;
     top: 4rem;
