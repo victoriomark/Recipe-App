@@ -278,6 +278,7 @@ footer{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    transition: 0.5s;
 }
 .card picture img{
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -296,6 +297,11 @@ footer{
 }
 .Item_Container{
     color: #000000;
+}
+
+
+.card:hover{
+    transform: translateY(10px);
 }
 
 /* FAQ CSS */
@@ -332,6 +338,9 @@ h5 .span{
 display: none;
 
 }
+.container:hover{
+   background-color: #0000;
+}
 .active_Contents{
     display: flex;
     transition: 1s ease-in-out;
@@ -365,18 +374,20 @@ display: none;
         place-items: center;
     }
     .about_us .contents{
-        width: 100%;
+        width: 90%;
+    } 
+    .about_us .contents p{
+        font-size: 10px;
+    } 
+    .teamTitle {
+        font-size: 10px;
     }
   picture img{
     height: 350px;
-    width: 350px;
-    border: 5px;
+    min-width: 300px;
   }
   .card picture img{
-    width: 320px;
-  }
-  .MeatMyTeam.card{
-    border: none;
+    width: 300px;
   }
   .container{
     width: 100%;
