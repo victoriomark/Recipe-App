@@ -114,8 +114,10 @@ a:hover{
 nav .dot{
     width: 25px;
     height: 3px;
-    background-color: aliceblue;
-    background-color: #1febc2;
+    background-color: #16c2a0;
+}
+.burger{
+    background-color: transparent;
 }
 nav{
     display: flex;
@@ -357,7 +359,6 @@ display: none;
 
     nav{
         display: flex;
-        background-color: #252B48;
     }
     .about_us{
         display: grid;
