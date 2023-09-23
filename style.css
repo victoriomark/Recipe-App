@@ -16,7 +16,7 @@ body{
 }
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1rem;
@@ -51,6 +51,7 @@ header ul,a{
     height: 50vh;
     background-image: url(./assets/img/cover2.avif);
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 form{
