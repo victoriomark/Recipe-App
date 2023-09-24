@@ -6,7 +6,7 @@ const loader = document.querySelector(".loader");
 // my Api
 const Recipe = async () => {
   const Search = document.querySelector("input");
-  const apiKey = "0+MqXToHwjmS0i7+RVhE1Q==BhuNr2wmhrzkujvH";
+  const apiKey = "gYj/k1hzhwfBA5am2CCSOQ==cVKQFAQVeFngEUYm";
   const apiEndpoint = `https://api.api-ninjas.com/v1/recipe?query=${Search.value}`;
 
   const data = await fetch(apiEndpoint, {
