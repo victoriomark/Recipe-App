@@ -113,16 +113,21 @@ a:hover{
     color:aliceblue;
 }
 
-.burger{
-    background-color: transparent;
-  
+#burger{
+   background-color: #1febc2;
+   padding: 10px;
+   display: flex;
+   color: #000000;
+   place-items: center;
+   border-radius: 50%;
+   display: none;
 }
 
 nav{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    display: none;
+   
 }
 .loader{
     position: absolute;
@@ -298,9 +303,9 @@ footer{
     color: #000000;
 }
 
-.burger i{
-    color: #16c2a0;
-    font-size: 3rem;
+#burger i{
+    font-size: 1.4rem;
+    color: #252B48;
 }
 .card:hover{
     transform: translateY(10px);
@@ -367,6 +372,9 @@ display: none;
     header{
         justify-content: space-between;
     }
+    #burger{
+        display: flex;
+    }
 
     nav{
         display: flex;
@@ -407,6 +415,7 @@ display: none;
 .main_container h1{
     font-size: 1.6rem;
 }
+
 }
 
 
