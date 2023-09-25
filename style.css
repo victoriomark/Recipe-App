@@ -67,14 +67,16 @@ form input{
     outline: none;
     border-radius: 5px;
     text-transform: lowercase;
+  
 
 }
 form button{
     border: none;
     border-radius: 5px;
     width: 5rem;
+  
     font-weight: 700;
-    color: #252B48;
+    background-color: #000000;
 }
 form button i{
     font-size: 1rem;
@@ -99,14 +101,10 @@ summary{
     color: aliceblue;
 }
 details p{
-
     word-spacing: 3px;
 }
 
-button:hover{
-    background-color: #1febc2;
-    color: aliceblue;
-}
+
 
 
 a:hover{
@@ -203,7 +201,6 @@ nav{
 
 
 .about_us .contents{
-    color: aliceblue;
     display: grid;
     gap: 10px;
     width: 50%;
@@ -211,7 +208,6 @@ nav{
 
 .about_us .contents p{
     word-spacing: 2px;
-    color: #a0a6c8;
 }
 
 
@@ -239,7 +235,6 @@ footer{
     gap: 1rem;
     height: 20vh;
     background-color: #2222;
-    color: aliceblue;
 
 }
 
@@ -307,10 +302,7 @@ footer{
     font-size: 1.4rem;
     color: #252B48;
 }
-.card:hover{
-    transform: translateY(10px);
-    background: conic-gradient(from 90deg at 102% 125%, #31726b, rgba(23, 109, 92, 1), rgba(0, 0, 0, 1))
-}
+
 /* FAQ CSS */
 
 .container{
@@ -320,16 +312,9 @@ footer{
     width: 50%;
     border-radius: 10px;
     gap: 10px;
-    background-color: #3334;
-    color: #a0a6c8;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+    background-color: #3334
 }
-.main_container h1{
-    color: #16c2a0;
-}
-.container h5{
-    color: #16c2a0;
-}
+
 .container h5{
     display: flex;
     align-items: center;
@@ -337,7 +322,6 @@ footer{
 }
 
 h5 .span{
- color: #fff;
     padding: 4px;
     cursor: pointer;
 }
@@ -345,9 +329,7 @@ h5 .span{
 display: none;
 
 }
-.container:hover{
-   background-color: #0000;
-}
+
 .active_Contents{
     display: flex;
     transition: 1s ease-in-out;
@@ -361,7 +343,37 @@ display: none;
     justify-content: center;
     gap: 10px;
     margin-top: 3rem;
-  color: aliceblue;
+}
+
+
+.darkMode{
+    position: fixed;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    top: 50%;
+    right: 1rem;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    background-color: #252B48;
+    cursor: pointer;
+    color: aliceblue;
+    animation: infinite;
+    animation-duration: 1s;
+    animation-name: Actives;
+}
+
+
+
+@keyframes Actives {
+    0%{
+        transform: scale(1.05);
+    }
+    50%{
+        transform: scale(1.07);
+    }
 }
 
 
@@ -464,4 +476,24 @@ display: none;
     color: #16c2a0;
     font-size: 2rem;
 }
+/* Body Active the dark mode  */
+.activeLightMode{
+ background-color: #ffff;
+ color:#000000;
+}
+/* card Active the dark mode  */
+.activeCard{
+background-color: #000000;
+border: none;
+    
+}
 
+/* card Active the dark mode  */
+ .FAQactive{
+    background-color: #000000;
+    color: #ffff;
+ }
+ .footerActive{
+    background-color:#000000 ;
+    color: aliceblue;
+ }

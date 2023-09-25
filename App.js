@@ -75,3 +75,24 @@ span.forEach((e, index_span) => {
     });
   });
 });
+
+{/* <span class="material-symbols-outlined">
+dark_mode
+</span> */}
+ // FOR DARK MODE FUNCTION
+ const DarkMode = () => {
+   let DarIcon = document.querySelector(".darkMode");
+   let body = document.querySelector('body')
+   let card = document.querySelectorAll(".card")
+   let container = document.querySelectorAll('.container')
+   let footer = document.querySelector('footer')
+
+    DarIcon.addEventListener("click",()=>{
+    body.classList.toggle("activeLightMode");
+    card.forEach(e =>{e.classList.toggle('activeCard')})
+    container.forEach(e =>{e.classList.toggle('FAQactive')})
+    footer.classList.toggle("footerActive");
+   })
+
+ }
+ DarkMode()
