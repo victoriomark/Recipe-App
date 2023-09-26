@@ -113,7 +113,7 @@ a:hover{
 
 #burger{
    background-color: #1febc2;
-   padding: 10px;
+   padding: 5px;
    display: flex;
    color: #000000;
    place-items: center;
@@ -491,7 +491,7 @@ border: none;
 /* card Active the dark mode  */
  .FAQactive{
     background-color: #000000;
-    color: #ffff;
+    color: #252B48;
  }
  .footerActive{
     background-color:#000000 ;

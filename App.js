@@ -2,13 +2,12 @@ const Item_Container = document.querySelector(".Item_Container");
 const navlink = document.querySelector("#navlink");
 const animated = document.querySelector("picture");
 const loader = document.querySelector(".loader");
-
+let Search = document.querySelector("input");
 // my Api
 const Recipe = async () => {
-  const Search = document.querySelector("input");
+  let Search = document.querySelector("input");
   const apiKey = "gYj/k1hzhwfBA5am2CCSOQ==cVKQFAQVeFngEUYm";
   const apiEndpoint = `https://api.api-ninjas.com/v1/recipe?query=${Search.value}`;
-
   const data = await fetch(apiEndpoint, {
     method: "GET",
     headers: { "X-Api-Key": apiKey },
@@ -47,12 +46,20 @@ document.querySelector("form").addEventListener("submit", (e) => {
 const btnSearch = document
   .getElementById("btnSearch")
   .addEventListener("click", () => {
-    loader.classList.add("active_LOADER");
-    setTimeout(() => {
-      loader.classList.remove("active_LOADER");
-      Recipe();
-      animated.classList.add("deactivated");
-    }, 4000);
+    if(Search === "" || Search.value ===""){
+      alert("Empty")
+    }else{
+      loader.classList.add("active_LOADER");
+      setTimeout(() => {
+        loader.classList.remove("active_LOADER");
+        Recipe();
+        animated.classList.add("deactivated");
+      }, 4000);
+    }
+
+
+
+  
   });
 
 const burger = document
