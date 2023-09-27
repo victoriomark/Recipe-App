@@ -46,8 +46,8 @@ document.querySelector("form").addEventListener("submit", (e) => {
 const btnSearch = document
   .getElementById("btnSearch")
   .addEventListener("click", () => {
-    if(Search === "" || Search.value ===""){
-      alert("Empty")
+    if(Search.value === "" ){
+      alert("Please input Your Recipe !")
     }else{
       loader.classList.add("active_LOADER");
       setTimeout(() => {
@@ -83,10 +83,6 @@ span.forEach((e, index_span) => {
   });
 });
 
-{/* <span class="material-symbols-outlined">
-dark_mode
-</span> */}
- // FOR DARK MODE FUNCTION
  const DarkMode = () => {
    let DarIcon = document.querySelector(".darkMode");
    let body = document.querySelector('body')
